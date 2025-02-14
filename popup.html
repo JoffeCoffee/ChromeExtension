@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joffe Coffee</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <h2>Check This Out</h2>
+        <nav>
+            <ul>
+                <li><a href="https://sites.google.com/view/joffecoffee" target="_blank">Home</a></li>
+                <li><a href="https://sites.google.com/view/joffecoffee/faq" target="_blank">About</a></li>
+                <li><a href="mailto:joffecoffee100@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Joffe Coffee – Where Every Sip Tells a Story!</h1>
+        <p>Indulge in rich, flavorful, and kosher coffee crafted with passion. Your perfect cup awaits!</p>
+        <a href="https://sites.google.com/view/joffecoffee/my-services" class="btn" target="_blank">Explore Our Menu</a>
+    </section>
+    
+    <section id="menu" class="content">
+        <h2>Delicious Brews & Treats</h2>
+        <ul>
+            <li>Coffee - $3.00</li>
+            <li>Tea - $3.00</li>
+            <li>Hot Chocolate - $3.00</li>
+        </ul>
+    </section>
+
+    <section id="game" class="content">
+        <h2>Catch the Coffee Beans!</h2>
+        <p>Each Level Is Ten Coffee Beans, Try To Get 5 Levels!</p>
+        <p style="font-size: 24px; font-weight: bold;">Score: <span id="score">0</span> | Level: <span id="level">1</span></p>
+        <button id="startButton">Start Game</button>
+        <canvas id="gameCanvas" width="400" height="400" style="border:1px solid #000; display: none;"></canvas>
+    </section>
+
+    <footer>
+        <p>2025 Joffe Coffee. All Rights Reserved.</p>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+

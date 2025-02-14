@@ -1,0 +1,41 @@
+body {
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(255, 145, 15);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
