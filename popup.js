@@ -54,6 +54,9 @@ function gameLoop() {
     } else if (beanY > canvas.height) {
         showAlert("Game over!\nYour final score: " + score);
         gameRunning = false;
+
+        // Scroll to the bottom of the page
+        window.scrollTo(0, document.body.scrollHeight);
         return;
     }
     requestAnimationFrame(gameLoop);
