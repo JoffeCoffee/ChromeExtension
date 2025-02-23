@@ -3,6 +3,7 @@ const ctx = canvas.getContext("2d");
 let beanX, beanY, playerX, score, playerSpeed, level = 1, beanSpeed;
 const playerWidth = 70;
 let gameRunning = false;
+const alertBox = document.getElementById("alert");
 
 function initializeGame() {
     beanX = Math.random() * canvas.width;
@@ -51,9 +52,8 @@ function gameLoop() {
             playerSpeed += 5;
         }
     } else if (beanY > canvas.height) {
-        alert("Game Over! Your final score: " + score);
+        showAlert("Game over!\nYour final score: " + score);
         gameRunning = false;
-        canvas.style.display = "none";
         return;
     }
     requestAnimationFrame(gameLoop);
@@ -67,3 +67,13 @@ document.getElementById("startButton").addEventListener("click", function() {
     }
 });
 
+// Function to show alert box
+function showAlert(text) {
+    alertBox.classList.remove("hidden");
+    document.getElementById("alertText").innerText = text
+}
+
+// Handle alert box close button event
+document.getElementById("alertCloseBtn").addEventListener("click", function () {
+    alertBox.classList.add("hidden");
+});

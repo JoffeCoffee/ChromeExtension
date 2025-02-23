@@ -17,6 +17,13 @@
             </ul>
         </nav>
     </header>
+
+    <div id="alert" class="hidden">
+        <div id="alertContent">
+          <p id="alertText">Game over!</p>
+          <button id="alertCloseBtn">Try again</button>
+        </div>
+    </div>
     
     <section id="home" class="hero">
         <h1>Welcome to Joffe Coffee – Where Every Sip Tells a Story!</h1>
@@ -38,7 +45,7 @@
         <p>Each Level Is Ten Coffee Beans, Try To Get 5 Levels!</p>
         <p style="font-size: 24px; font-weight: bold;">Score: <span id="score">0</span> | Level: <span id="level">1</span></p>
         <button id="startButton">Start Game</button>
-        <canvas id="gameCanvas" width="400" height="400" style="border:1px solid #000; display: none;"></canvas>
+        <canvas id="gameCanvas" width="400" height="400" style="margin-top: 10px; border:1px solid #000; display: none;"></canvas>
     </section>
 
     <footer>
