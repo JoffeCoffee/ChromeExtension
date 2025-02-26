@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Joffe Coffee Extension",
-    "version": "1.0",
+    "version": "2.1",
     "description": "Enjoy Joffe Coffee directly from your Chrome extension!",
     "action": {
       "default_popup": "popup.html",
